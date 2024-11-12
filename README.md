@@ -1,3 +1,4 @@
+
 <h1 align="center">
   <img alt="Typst" src="https://user-images.githubusercontent.com/17899797/226108480-722b770e-6313-40d7-84f2-26bebb55a281.png">
 </h1>
@@ -18,7 +19,21 @@
   <a href="https://typst.app/jobs/">
     <img alt="Jobs at Typst" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Ftypst.app%2Fassets%2Fdata%2Fshields.json&query=%24.jobs.text&label=jobs&color=%23A561FF&cacheSeconds=1800"
   /></a>
+  
 </p>
+### Table of Contents
+- [Typst](#typst)
+- [Example](#example)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Community](#community)
+- [Contributing](#contributing)
+- [Pronunciation and Spelling](#pronunciation-and-spelling)
+- [Design Principles](#design-principles)
+- [Dependencies](#dependencies)
+- [Version Compatibility](#version-compatibility)
+
+---
 
 Typst is a new markup-based typesetting system that is designed to be as powerful
 as LaTeX while being much easier to learn and use. Typst has:
@@ -254,3 +269,30 @@ instant preview. To achieve these goals, we follow three core design principles:
 [contributing]: https://github.com/typst/typst/blob/main/CONTRIBUTING.md
 [packages]: https://github.com/typst/packages/
 [`comemo`]: https://github.com/typst/comemo/
+
+### Dependencies
+Typst has the following dependencies and platform-specific requirements:
+
+- **Rust**: Required if building Typst from source. Install the latest stable version from [Rust’s official website](https://rustup.rs/).
+- **Docker**: (Optional) Use Docker to run Typst without directly installing it on your system.
+- **Operating System Compatibility**:
+  - Linux, macOS, and Windows are fully supported.
+  - For package manager installations:
+    - macOS: `brew install typst`
+    - Windows: `winget install --id Typst.Typst`
+    - Linux: Available in several distributions (see [Repology](https://repology.org/project/typst/versions) for a full list).
+- **Development Tools**: For contributors, Rust’s Cargo is necessary for building and managing dependencies. Clone and build instructions are in the [Contributing](#contributing) section.
+
+---
+
+### Version Compatibility
+Typst is actively maintained, and compatibility with other versions is tested to support the latest features and integrations. Below are guidelines for compatibility across versions:
+
+- **Backward Compatibility**: Typst strives to maintain backward compatibility in major releases. Minor updates may include bug fixes and optimizations without affecting previous workflows.
+- **Breaking Changes**: Breaking changes are introduced only in major releases, with migration instructions provided in the [release notes](https://github.com/typst/typst/releases/).
+- **Versioning**: Follow [Semantic Versioning](https://semver.org/) for clarity, where:
+  - `MAJOR` version changes (e.g., 1.x to 2.x) may include breaking changes.
+  - `MINOR` version updates (e.g., 1.1 to 1.2) are backward-compatible and add features.
+  - `PATCH` updates (e.g., 1.1.1 to 1.1.2) are backward-compatible bug fixes.
+
+For specific details on compatibility or updates, see the [Releases page](https://github.com/typst/typst/releases/).
